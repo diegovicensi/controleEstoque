@@ -15,7 +15,9 @@ public class Menu extends javax.swing.JFrame {
      * Creates new form Menu
      */
     public Menu() {
+       
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -64,7 +66,7 @@ public class Menu extends javax.swing.JFrame {
             .addGap(0, 455, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(640, 515));
+        pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

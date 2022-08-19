@@ -5,7 +5,7 @@
  */
 package Classes;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  *
@@ -15,7 +15,7 @@ public class Usuario {
     private Integer idusuarios;
     private String nome;
     private Date datanascimento;
-    private Character situacao;
+    private String situacao;
     private String login;
     private String senha;
     private Date dataativacao;
@@ -66,14 +66,14 @@ public class Usuario {
     /**
      * @return the situacao
      */
-    public Character getSituacao() {
+    public String getSituacao() {
         return situacao;
     }
 
     /**
      * @param situacao the situacao to set
      */
-    public void setSituacao(Character situacao) {
+    public void setSituacao(String situacao) {
         this.situacao = situacao;
     }
 

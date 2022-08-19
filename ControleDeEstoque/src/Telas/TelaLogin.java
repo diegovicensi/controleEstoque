@@ -6,7 +6,7 @@
 package Telas;
 
 import Classes.Usuario;
-import Implementacao.UsiarioImpl;
+import Implementacao.UsuarioImpl;
 import javax.swing.JOptionPane;
 
 /**
@@ -100,7 +100,7 @@ public class TelaLogin extends javax.swing.JFrame {
         usuario.setLogin(lbLogin.getText());
         usuario.setSenha(txtSenha.getText());
 
-        UsiarioImpl usuarioImpl = new UsiarioImpl();
+        UsuarioImpl usuarioImpl = new UsuarioImpl();
         if(usuarioImpl.validaLogon(usuario)){
             Menu menu = new Menu();
             menu.setVisible(true);
